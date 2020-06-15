@@ -12,8 +12,7 @@ import java.util.List;
 @RequestMapping("")
 public class GymController {
     @Autowired GymRepository gymRepository;
-
-
+    
     @GetMapping("/aaa")
     public List<Gym> list(){
         return gymRepository.findAll();
