@@ -22,11 +22,11 @@
 
       <v-list-item link>
           <v-list-item-action>
-            <v-icon>mdi-email</v-icon>
+            <v-icon>Logout</v-icon>
           </v-list-item-action>
 
           <v-list-item-content>
-            <v-list-item-title @click="log">Login</v-list-item-title>
+            <v-list-item-title @click="log">Logout</v-list-item-title>
           </v-list-item-content>
       </v-list-item>
 
@@ -50,7 +50,7 @@
   >
 
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title @click="log2" style="cursor: pointer">로그인이 필요합니다.</v-toolbar-title>
+      <v-toolbar-title @click="log2" style="cursor: pointer">~~~님</v-toolbar-title>
           <v-btn icon>
             <v-icon>mdi-magnify</v-icon>
           </v-btn>

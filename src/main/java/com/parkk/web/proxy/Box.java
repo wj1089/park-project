@@ -1,4 +1,4 @@
-package proxy;
+package com.parkk.web.proxy;
 
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;

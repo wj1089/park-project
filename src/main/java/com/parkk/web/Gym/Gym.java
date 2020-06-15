@@ -10,16 +10,12 @@ import javax.persistence.*;
 public class Gym {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long gymNo;
-
-    @Column(length = 50) private String seq;
     @Column(length = 550) private String ser_Num;
     @Column(length = 50) private String open_YN;
     @Column(length = 50) private String number;
     @Column(length = 350) private String address;
     @Column(length = 10) private String mailing_address;
     @Column(length = 200) private String name;
-    @Column(length = 50) private String centerType;
-    @Column(length = 10) private String public_Private;
 
     public Gym(){}
 
@@ -31,13 +27,6 @@ public class Gym {
         this.gymNo = gymNo;
     }
 
-    public String getSeq() {
-        return seq;
-    }
-
-    public void setSeq(String seq) {
-        this.seq = seq;
-    }
 
     public String getSer_Num() {
         return ser_Num;
@@ -87,19 +76,4 @@ public class Gym {
         this.name = name;
     }
 
-    public String getCenterType() {
-        return centerType;
-    }
-
-    public void setCenterType(String centerType) {
-        this.centerType = centerType;
-    }
-
-    public String getPublic_Private() {
-        return public_Private;
-    }
-
-    public void setPublic_Private(String public_Private) {
-        this.public_Private = public_Private;
-    }
 }

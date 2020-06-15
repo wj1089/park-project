@@ -57,7 +57,7 @@
 
                         <section id="content2">
                             <div name="content2">
-                                <img src="https://lh3.googleusercontent.com/proxy/cOyKtKtCLvSiVstV9oFrXZJCcEVzt_-LaTRyK5rF_hZw31Rm8VmCBGLKUcCPRODIUWlQNI4PPdhSDRiSD266-I-zFf8tRyP5WGXmftvfsi8hfWTvRtSRCw" width="550px">
+                                <img src="https://lh3.googleusercontent.com/com.parkk.web.proxy/cOyKtKtCLvSiVstV9oFrXZJCcEVzt_-LaTRyK5rF_hZw31Rm8VmCBGLKUcCPRODIUWlQNI4PPdhSDRiSD266-I-zFf8tRyP5WGXmftvfsi8hfWTvRtSRCw" width="550px">
                                 <img src="https://citybook.pk/wp-content/uploads/2019/01/gym-in-lahore-dha-citybook-1.jpg" width="550px">
                             </div>
                         </section>

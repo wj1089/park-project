@@ -1,4 +1,4 @@
-package proxy;
+package com.parkk.web.proxy;
 
 import com.parkk.web.Gym.Gym;
 import com.parkk.web.Gym.GymDTO;
@@ -23,11 +23,11 @@ public class FileUploader extends Proxy {
         try{
             BufferedReader reader = new BufferedReader(
                     new FileReader(
-                            new File("/Users/apple/IdeaProjects/health2/src/main/resources/healthclub/gym2.csv")));
-//                                                    \Users\apple\IdeaProjects\health2\src\main\resources\healthclub\gym2.txt
-            String ser_Num = "";
-            while(( ser_Num = reader.readLine())!=null){
-                inventory.add(ser_Num);
+                            new File("/Users/apple/Desktop/gym4.txt")));
+//                         \Users\apple\IdeaProjects\health2\src\main\resources\healthclub\gym2.txt
+            String gym = "";
+            while(( gym = reader.readLine())!=null){
+                inventory.add(gym);
             }
         }catch(Exception e){
             print("파일 리딩 에러");
@@ -41,16 +41,13 @@ public class FileUploader extends Proxy {
 
 
         Gym p = new Gym();
-        p.setSeq(arr[0]);
         p.setSer_Num(arr[1]);
+        p.setOpen_YN(arr[2]);
+        p.setNumber(arr[3]);
+        p.setAddress(arr[4]);
+        p.setMailing_address(arr[5]);
+        p.setName(arr[6]);
 
-        p.setOpen_YN(arr[3]);
-        p.setNumber(arr[4]);
-        p.setAddress(arr[5]);
-        p.setMailing_address(arr[6]);
-        p.setName(arr[7]);
-        p.setCenterType(arr[8]);
-        p.setPublic_Private(arr[9]);
 
         print("************************************");
         print(ser_Num.toString());

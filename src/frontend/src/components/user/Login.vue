@@ -1,6 +1,27 @@
 <template>
     <div>
         <h2>Login Form</h2>
+        <v-app-bar
+                app
+                color="black"
+                dark
+        >
+            <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+            <v-toolbar-title>로그인이 필요합니다.</v-toolbar-title>
+            <v-btn icon>
+                <v-icon>mdi-magnify</v-icon>
+            </v-btn>
+
+            <v-btn icon>
+                <v-icon>mdi-heart</v-icon>
+            </v-btn>
+
+            <v-btn icon>
+                <v-icon>mdi-dots-vertical</v-icon>
+            </v-btn>
+
+        </v-app-bar>
+
         <div class="imgcontainer">
             <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
         </div>
@@ -49,8 +70,10 @@
             },
             moveToPasswd(){
                 document.getElementById('passwd').focus()
-
-            }
+            },
+            submit(){
+                this.$router.push('/Logout')
+            },
         }
     }
 </script>
